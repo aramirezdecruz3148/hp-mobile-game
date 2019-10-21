@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import GameRound from './components/GameRound';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>This will be an AWESOME APP!</Text>
-      <Text>{villains.length}</Text>
+      <GameRound round={3} />
     </View>
   );
 }
