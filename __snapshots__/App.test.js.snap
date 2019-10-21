@@ -11,8 +11,8 @@ exports[`App component renders App 1`] = `
     }
   }
 >
-  <Text>
-    This will be an AWESOME APP!
-  </Text>
+  <GameRound
+    round={3}
+  />
 </View>
 `;
