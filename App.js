@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>This will be an AWESOME APP!</Text>
+      <Text>{villains.length}</Text>
     </View>
   );
 }
