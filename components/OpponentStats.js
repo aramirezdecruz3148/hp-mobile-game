@@ -4,11 +4,15 @@ import PropTypes from "prop-types";
 
 export default function OpponentStats({ name, image, health }) {
   return (
+    <>
     <View>
-      <Image style={{width: 50, height: 50}} source={{ uri: image }} />
+      <Image style={{width: 80, height: 80}} source={{ uri: image }} />
+    </View>
+    <View>
       <Text>{name}</Text>
       <Text>Health: {health}</Text>
     </View>
+    </>
   );
 }
 
