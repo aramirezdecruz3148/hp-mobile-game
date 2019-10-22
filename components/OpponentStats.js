@@ -6,7 +6,12 @@ export default function OpponentStats({ name, image, health }) {
   return (
     <>
     <View>
-      <Image style={{width: 80, height: 80}} source={{ uri: image }} />
+      <Image style={{
+      width: 80, 
+      height: 80, 
+      borderRadius: 100,
+      borderWidth: 1,
+      borderColor: 'black' }} source={{ uri: image }} />
     </View>
     <View>
       <Text>{name}</Text>
