@@ -7,7 +7,7 @@ export default function OpponentStats({ name, image, health }) {
     <View>
       <Image style={{width: 50, height: 50}} source={{ uri: image }} />
       <Text>{name}</Text>
-      <Text>{health}</Text>
+      <Text>Health: {health}</Text>
     </View>
   );
 }
