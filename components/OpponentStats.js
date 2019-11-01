@@ -14,8 +14,7 @@ export default function OpponentStats({ name, image, health }) {
       borderColor: 'black' }} source={{ uri: image }} />
     </View>
     <View>
-      <Text>{name}</Text>
-      <Text>Health: {health}</Text>
+      <Text>{name}'s Health: {health}</Text>
     </View>
     </>
   );

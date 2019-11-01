@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import GameRound from './components/GameRound';
 import OpponentStats from './components/OpponentStats';
+import PlayerStats from './components/PlayerStats';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       name="Draco Malfoy" 
       image="https://vignette.wikia.nocookie.net/harrypotter/images/7/7e/Draco_Malfoy_TDH.png/revision/latest/scale-to-width-down/350?cb=20180116013508" 
       health={10} />
+      <PlayerStats health={8} />
     </View>
   );
 }
