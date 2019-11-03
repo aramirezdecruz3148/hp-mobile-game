@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerSpells component renders PlayerSpells 1`] = `
+<SafeAreaView>
+  <FlatList
+    data={
+      Array [
+        Object {
+          "damage": -1,
+          "effect": "turns opponent's hair into antlers",
+          "outcome": "You were hit with the Anteoculatia hex, which caused
+          giant antlers to sprout on your head and took 1 damage point from
+          your health",
+          "spell": "Anteoculatia",
+          "type": "Hex",
+        },
+        Object {
+          "damage": -2,
+          "effect": "launches birds at your opponent",
+          "outcome": "You were hit with the Avis spell, which caused birds to swarm
+          and attack you and took 2 damage points from your health",
+          "spell": "Avis",
+          "type": "Spell",
+        },
+        Object {
+          "damage": -1,
+          "effect": "makes opponent endlessly babble",
+          "outcome": "You were hit with the Babbling curse, which is caused you to 
+          endlessly babble none sense and took 2 damage points from your health",
+          "spell": "Babbling Curse ",
+          "type": "Curse",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</SafeAreaView>
+`;
