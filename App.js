@@ -4,6 +4,7 @@ import GameRound from './components/GameRound';
 import OpponentStats from './components/OpponentStats';
 import PlayerStats from './components/PlayerStats';
 import PlayerSpells from './components/PlayerSpells';
+import OutcomeModal from './components/OutcomeModal';
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
           endlessly babble none sense and took 2 damage points from your health`
         }
       ]} />
+      <OutcomeModal />
     </View>
     </>
   );
