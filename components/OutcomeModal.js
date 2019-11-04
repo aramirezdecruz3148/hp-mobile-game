@@ -1,27 +1,23 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Button, Text, View } from "react-native";
 import Modal from "react-native-modal";
 
-export default class OutcomeModal extends Component {
-  state = {
-    isModalVisible: false
+export default function OutcomeModal() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    !isModalVisible ? setIsModalVisible(true) : setIsModalVisible(false);
   };
 
-  toggleModal = () => {
-    this.setState({ isModalVisible: !this.state.isModalVisible });
-  };
-
-  render() {
-    return (
-      <View style={{ flex: 1 }}>
-        <Button title="Show modal" onPress={this.toggleModal} />
-        <Modal isVisible={this.state.isModalVisible}>
-          <View style={{ flex: 1 }}>
-            <Text>Hello!</Text>
-            <Button title="Hide modal" onPress={this.toggleModal} />
-          </View>
-        </Modal>
-      </View>
-    );
-  }
+  return (
+    <View style={{ flex: 1 }}>
+      <Button title="Show modal" onPress={toggleModal} />
+      <Modal isVisible={isModalVisible}>
+        <View style={{ flex: 1 }}>
+          <Text>Hello!</Text>
+          <Button title="Hide modal" onPress={toggleModal} />
+        </View>
+      </Modal>
+    </View>
+  );
 }
