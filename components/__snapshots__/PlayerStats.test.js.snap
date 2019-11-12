@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerStats component renders PlayerStats 1`] = `
+<View>
+  <Text>
+    Your Health: 
+    8
+  </Text>
+</View>
+`;

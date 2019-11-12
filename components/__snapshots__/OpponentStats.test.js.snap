@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpponentStats component renders OpponentStats 1`] = `
+<Fragment>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "https://vignette.wikia.nocookie.net/harrypotter/images/7/7e/Draco_Malfoy_TDH.png/revision/latest/scale-to-width-down/350?cb=20180116013508",
+        }
+      }
+      style={
+        Object {
+          "borderColor": "black",
+          "borderRadius": 100,
+          "borderWidth": 1,
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text>
+      Draco Malfoy
+      's Health: 
+      10
+    </Text>
+  </View>
+</Fragment>
+`;
