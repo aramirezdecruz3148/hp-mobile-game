@@ -4,8 +4,8 @@ import { updatePlayerHealth, updateOpponentHealth } from '../actions/healthActio
 describe('healthReducer tests', () => {
   it('returns default state', () => {
     const state = {
-      playerHealth: 10, 
-      opponentHealth: 10
+      player: 10, 
+      opponent: 10
     };
 
     const action = {
@@ -20,8 +20,8 @@ describe('healthReducer tests', () => {
 
   it('updates player health', () => {
     const state = {
-      playerHealth: 10, 
-      opponentHealth: 10
+      player: 10, 
+      opponent: 10
     };
 
     const action = updatePlayerHealth(-6);
@@ -29,15 +29,15 @@ describe('healthReducer tests', () => {
     const newState = healthReducer(state, action);
     
     expect(newState).toEqual({
-      playerHealth: 4,
-      opponentHealth: 10
+      player: 4,
+      opponent: 10
     });
   });
 
   it('updates opponent health', () => {
     const state = {
-      playerHealth: 10, 
-      opponentHealth: 10
+      player: 10, 
+      opponent: 10
     };
 
     const action = updateOpponentHealth(-3);
@@ -45,8 +45,8 @@ describe('healthReducer tests', () => {
     const newState = healthReducer(state, action);
     
     expect(newState).toEqual({
-      playerHealth: 10,
-      opponentHealth: 7
+      player: 10,
+      opponent: 7
     });
   });
 });
