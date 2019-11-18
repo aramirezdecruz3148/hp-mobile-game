@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StartGame component renders StartGame 1`] = `
+<View>
+  <Button
+    onPress={[Function]}
+    title="Start Game"
+  />
+</View>
+`;

@@ -4,7 +4,7 @@
 a modal that will start/end the game, but for simplicity just make
 it a button for now
 3. Need to create a duel button
-4. Create functions necessary to retrieve data:
+4. Create functions necessary to retrieve data (I think they should live in container for service folder):
   a. Function to get array of 5 random spells from data
   b. Function to get one random spell
   c. Function to get one random villian
@@ -17,4 +17,5 @@ button
     to the spell objects: isSelected
       - Will need an action to update the isSelected property
       - Will need an action to remove the selected spell
+7. Will also need to make a component to hold all components that need to g
 */
