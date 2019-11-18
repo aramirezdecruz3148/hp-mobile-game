@@ -3,10 +3,10 @@ import { Button, Text, View } from "react-native";
 import Modal from "react-native-modal";
 
 export default function OutcomeModal() {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(true);
 
   const toggleModal = () => {
-    !isModalVisible ? setIsModalVisible(true) : setIsModalVisible(false);
+    isModalVisible ? setIsModalVisible(false) : setIsModalVisible(true);
   };
 
   return (
@@ -15,7 +15,7 @@ export default function OutcomeModal() {
       <Modal isVisible={isModalVisible}>
         <View style={{ flex: 1 }}>
           <Text>Hello!</Text>
-          <Button title="Hide modal" onPress={toggleModal} />
+          {/* <Button title="Hide modal" onPress={toggleModal} /> */}
         </View>
       </Modal>
     </View>
