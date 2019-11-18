@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DuelButton component renders DuelButton 1`] = `
+<View>
+  <Button
+    onPress={[Function]}
+    title="Duel"
+  />
+</View>
+`;
